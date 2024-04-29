@@ -76,7 +76,7 @@ const WriteBlog = () => {
         });
         navigate(`/myBlogs/${auth.currentUser.uid}`);
         setLoading(false);
-        toast.success("Post published");
+        toast.success("Artigo publicado");
       } catch (error) {
         setLoading(false);
         console.error(error);
@@ -100,7 +100,7 @@ const WriteBlog = () => {
   return (
     <div className='h-full bg-gray-200 pb-20'>
       <h1 className='bg-gradient-to-r from-violet-600 to-indigo-600 bg-clip-text py-4 pt-14 text-center font-raleway text-4xl font-extrabold text-transparent md:text-5xl'>
-        <Balancer>Create a new blog post</Balancer>
+        <Balancer>Criar um novo artigo</Balancer>
       </h1>
       <form
         onSubmit={onSubmitHandler}
@@ -119,7 +119,7 @@ const WriteBlog = () => {
           className='mt-5 h-12 w-full rounded-md border-zinc-800 pl-3 text-zinc-700'
           value={title}
           id='title'
-          placeholder='Enter title here...'
+          placeholder='Escreva o título do seu artigo aqui'
         />
         <input
           onChange={onChangeHandler}
@@ -134,7 +134,7 @@ const WriteBlog = () => {
             type='submit'
             className='mt-20 w-full cursor-pointer rounded-md bg-gradient-to-r from-violet-600 to-indigo-600 py-3 font-semibold text-white transition duration-200 ease-in-out active:scale-90 md:mt-8'
           >
-            Publish post
+            Publicar artigo
           </button>
         </div>
       </form>

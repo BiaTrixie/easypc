@@ -34,7 +34,7 @@ const OAuth = () => {
         className='google__btn__shadow flex w-full cursor-pointer items-center justify-center rounded-md bg-gradient-to-r from-rose-400 to-red-500 py-3 font-semibold text-white transition duration-200 ease-in-out active:scale-95'
       >
         <FcGoogle size={22} className='mr-2 rounded-full bg-white' />
-        Sign in with google
+        Faça Login com o Google
       </button>
     </div>
   );

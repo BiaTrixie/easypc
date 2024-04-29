@@ -35,7 +35,7 @@ const SignIn = () => {
       );
       if (userCredentials?.user) {
         navigate("/");
-        toast.success("Welcome Back, have a great day");
+        toast.success("Bem-vindo de volta, tenha um ótimo dia!");
       }
     } catch (error) {
       console.log(error);
@@ -51,8 +51,8 @@ const SignIn = () => {
 
   return (
     <div className=''>
-      <h1 className='my-12 mb-20 bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-center font-raleway text-5xl font-extrabold text-transparent'>
-        Sign-in in your account
+      <h1 className='my-12 mb-20 bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-center font-raleway text-5xl font-extrabold text-transparent py-2'>
+        Faça login em sua conta
       </h1>
       <section className='mx-auto max-w-7xl'>
         <div className='h-full'>
@@ -81,7 +81,7 @@ const SignIn = () => {
                     required
                   />
                   <label htmlFor='name' className='form__label'>
-                    Email address
+                    Endereço de email
                   </label>
                 </div>
 
@@ -98,25 +98,25 @@ const SignIn = () => {
                     required
                   />
                   <label htmlFor='name' className='form__label'>
-                    Password
+                    Senha
                   </label>
                 </div>
 
                 <div className='mx-auto flex w-full max-w-[90%] items-center justify-between'>
                   <p className='text- pt-3 text-gray-400'>
-                    Dont have an account?{" "}
+                    Não tem uma conta?{" "}
                     <span
                       onClick={() => navigate("/sign-up")}
                       className='cursor-pointer bg-gradient-to-r from-rose-400 to-red-500 bg-clip-text text-transparent'
                     >
-                      Register
+                      Registre-se
                     </span>{" "}
                   </p>
                   <p
                     onClick={() => navigate("/forgot-password")}
                     className='inline cursor-pointer bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text pt-3 text-transparent hover:shadow-xl'
                   >
-                    Forgot password?
+                    Esqueceu a senha?
                   </p>
                 </div>
 
@@ -132,7 +132,7 @@ const SignIn = () => {
 
                 <div className='mx-auto my-4 mt-5 flex w-full max-w-[90%] items-center before:mt-0.5 before:flex-1 before:border-t before:border-gray-500 after:mt-0.5 after:flex-1 after:border-t after:border-gray-500'>
                   <p className='mx-4 mb-0 text-center font-semibold dark:text-white'>
-                    OR
+                    OU
                   </p>
                 </div>
               </form>

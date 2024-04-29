@@ -79,7 +79,7 @@ const Header = () => {
       <div className='relative mx-auto flex max-w-7xl items-center justify-between py-3 font-raleway'>
         <h1
           onClick={() => navigate("/")}
-          className='logo cursor-pointer pl-4 text-blue sm:text-3xl'
+          className='logo cursor-pointer pl-4  sm:text-3xl'
         >
          EASYPC
         </h1>

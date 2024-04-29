@@ -20,11 +20,10 @@ header {
 .logo {
   font-size: 24px;
   font-weight: bold;
-  background: linear-gradient(90deg, purple, blue);
+  background: linear-gradient(90deg, #9333ea, #2563eb);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0px 0px 3px rgb(170, 215, 255));
 }
 
 /* 

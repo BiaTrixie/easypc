@@ -51,8 +51,8 @@ const SignIn = () => {
 
   return (
     <div className=''>
-      <h1 className='my-12 mb-20 bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-center font-raleway text-5xl font-extrabold text-transparent'>
-      Faça login em sua conta
+      <h1 className='my-12 mb-20 bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-center font-raleway text-5xl font-extrabold text-transparent py-2'>
+        Faça login em sua conta
       </h1>
       <section className='mx-auto max-w-7xl'>
         <div className='h-full'>
@@ -81,7 +81,7 @@ const SignIn = () => {
                     required
                   />
                   <label htmlFor='name' className='form__label'>
-                   Endereço de email
+                    Endereço de email
                   </label>
                 </div>
 

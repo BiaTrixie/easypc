@@ -19,7 +19,7 @@ const OAuth = () => {
         timestamp: serverTimestamp(),
       });
       if (user) {
-        toast.success("Successfully signed in!!");
+        toast.success("Cadastrado com sucesso!");
         console.log(user);
         navigate("/");
       }

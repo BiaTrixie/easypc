@@ -31,7 +31,7 @@ const Header = () => {
   const handleLogout = async () => {
     const result = await Swal.fire({
       title: "Logout",
-      text: "Are you sure you want to logout?",
+      text: "Tem certeza que deseja sair?",
       icon: "question",
       showCancelButton: true,
       confirmButtonColor: "#3085d6",

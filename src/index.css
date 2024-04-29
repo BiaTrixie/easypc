@@ -20,11 +20,10 @@ header {
 .logo {
   font-size: 24px;
   font-weight: bold;
-  background: linear-gradient(90deg, purple, blue);
+  background: linear-gradient(90deg, #ff00ff, blue);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0px 0px 3px rgb(170, 215, 255));
 }
 
 /* 
@@ -54,7 +53,7 @@ header ul li::after {
   left: 7px;
   width: 80%;
   height: 2px;
-  background: linear-gradient(90deg, #ff5f6d, #ffc371);
+  background: linear-gradient(290deg, #ff00ff, blue);
   transform: scaleX(0);
   transition: transform 0.1s ease;
   transform: scaleX(1.2);

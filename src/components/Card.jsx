@@ -64,7 +64,7 @@ const Card = ({ id, blog, delHandler }) => {
             <span className="active:scale-95' absolute left-2 top-[14.8rem] cursor-pointer rounded-lg bg-zinc-600 px-3 py-2 text-sm font-medium focus:outline-none focus:ring-4">
               {blog?.timestamp
                 ? dayjs(blog.timestamp.toDate()).fromNow()
-                : "Timestamp not available"}
+                : "Timestamp  não disponivel"}
             </span>
 
             {/* Action icons */}

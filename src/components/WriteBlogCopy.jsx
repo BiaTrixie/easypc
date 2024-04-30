@@ -74,11 +74,11 @@ const WriteBlog = () => {
       console.log(data);
       navigate(`/myBlogs/${auth.currentUser.uid}`);
       setLoading(false);
-      toast.success("Post published");
+      toast.success("Artigo publicado");
     } catch (error) {
       setLoading(false);
       console.error(error);
-      toast.error("Unable to publish post");
+      toast.error("Não foi possível publicar o artigo");
     }
   };
 
@@ -312,7 +312,7 @@ const WriteBlog = () => {
                 py-2 text-white hover:bg-gray-600 focus:outline-none'
               onClick={toggleMenu}
             >
-              {category ? `${category}` : " Select a category"}
+              {category ? `${category}` : " Seleccione a categoria"}
 
               <svg
                 className='ml-2 h-4 w-4'

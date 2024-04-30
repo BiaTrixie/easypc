@@ -9,28 +9,28 @@ const Tags = () => {
   return (
     <ul className='mx-4 mt-6 flex items-center overflow-x-scroll pl-4 capitalize text-white md:mx-0  md:flex-wrap md:overflow-auto lg:justify-center lg:pl-0'>
       <li className={`${styles.categoryBtn}`}>
-        <Link to={"/category/entertainment"}>Fundamentos</Link>{" "}
+        <Link to={"/category/fundamentos"}>Fundamentos</Link>{" "}
       </li>
 
       <li className={`${styles.categoryBtn}`}>
-        <Link to={"/category/knowledge"}>Componentes</Link>{" "}
+        <Link to={"/category/componentes"}>Componentes</Link>{" "}
       </li>
 
       <li className={`${styles.categoryBtn}`}>
-        <Link to={"/category/programming"}>Montagem</Link>{" "}
+        <Link to={"/category/montagem"}>Montagem</Link>{" "}
       </li>
 
       <li className={`${styles.categoryBtn}`}>
-        <Link to={"/category/productivity"}>Sistema</Link>{" "}
+        <Link to={"/category/sistema"}>Sistema</Link>{" "}
       </li>
       <li className={`${styles.categoryBtn}`}>
-        <Link to={"/category/lifestyle"}>Segurança</Link>{" "}
+        <Link to={"/category/segurança"}>Segurança</Link>{" "}
       </li>
       <li className={`${styles.categoryBtn}`}>
-        <Link to={"/category/design"}>Personalização</Link>{" "}
+        <Link to={"/category/personalizacao"}>Personalização</Link>{" "}
       </li>
       <li className={`${styles.categoryBtn}`}>
-        <Link to={"/category/travel"}>Dicas</Link>{" "}
+        <Link to={"/category/dicas"}>Dicas</Link>{" "}
       </li>
     </ul>
   );

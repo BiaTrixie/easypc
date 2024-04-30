@@ -6,10 +6,10 @@ const Hero = () => {
     <div className='prose prose-stone mx-5 my-12 flex max-w-7xl flex-col items-center md:flex-row lg:mx-auto'>
       <div className='mx-auto w-full max-w-[90%] md:mr-3 md:max-w-[46%]'>
         <h1 className=' bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text py-3 text-3xl font-extrabold text-transparent lg:text-5xl'>
-          Quer aprender tudo sobre computação? e seus componentes?
+        Uma Jornada pela Tecnologia da Informação
         </h1>
         <p className='text-gray-400 md:pt-4 lg:text-lg'>
-          Aqui você vai aprender tudo do zero ao avançado!
+        Descubra os Sistemas, Componentes e o Mundo Fascinante do TI        
         </p>
       </div>
       <div className='mx-auto max-w-[70%] bg-transparent md:max-w-[50%]'>

@@ -74,11 +74,11 @@ const WriteBlog = () => {
       console.log(data);
       navigate(`/myBlogs/${auth.currentUser.uid}`);
       setLoading(false);
-      toast.success("Post published");
+      toast.success("Artigo publicado");
     } catch (error) {
       setLoading(false);
       console.error(error);
-      toast.error("Unable to publish post");
+      toast.error("Não foi possível publicar o artigo");
     }
   };
 
@@ -312,7 +312,7 @@ const WriteBlog = () => {
                 py-2 text-white hover:bg-gray-600 focus:outline-none'
               onClick={toggleMenu}
             >
-              {category ? `${category}` : " Select a category"}
+              {category ? `${category}` : " Seleccione a categoria"}
 
               <svg
                 className='ml-2 h-4 w-4'
@@ -334,65 +334,65 @@ const WriteBlog = () => {
               <div className='absolute z-10 mt-3 w-44 divide-y divide-gray-100 rounded-lg bg-white shadow dark:bg-gray-700'>
                 <ul className='py-2 text-sm text-gray-700 dark:text-gray-200'>
                   <li
-                    onClick={() => selectCategory("Fundamentos")}
+                    onClick={() => selectCategory("fundamentos")}
                     id='category'
-                    value='Fundamentos'
+                    value='fundamentos'
                     className='block cursor-pointer px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'
                   >
-                    <a>Fundamentos</a>
+                    <a>fundamentos</a>
                   </li>
                   <li
-                    onClick={() => selectCategory("Componentes")}
+                    onClick={() => selectCategory("componentes")}
                     id='category'
-                    value='Componentes'
+                    value='componentes'
                     className='block cursor-pointer px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'
                   >
-                    <a>Componentes</a>
-                  </li>
-
-                  <li
-                    onClick={() => selectCategory("Montagem")}
-                    id='category'
-                    value=' Montagem'
-                    className='block cursor-pointer px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'
-                  >
-                    <a> Montagem</a>
+                    <a>componentes</a>
                   </li>
 
                   <li
-                    onClick={() => selectCategory("Sistema")}
+                    onClick={() => selectCategory("montagem")}
                     id='category'
-                    value=' Sistema'
+                    value=' montagem'
                     className='block cursor-pointer px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'
                   >
-                    <a> Sistema</a>
+                    <a>montagem</a>
                   </li>
 
                   <li
-                    onClick={() => selectCategory("Segurança")}
+                    onClick={() => selectCategory("sistema")}
                     id='category'
-                    value='Segurança'
+                    value=' sistema'
                     className='block cursor-pointer px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'
                   >
-                    <a>Segurança</a>
+                    <a>sistema</a>
                   </li>
 
                   <li
-                    onClick={() => selectCategory("Personalização")}
+                    onClick={() => selectCategory("segurança")}
                     id='category'
-                    value='Personalização'
+                    value='segurança'
                     className='block cursor-pointer px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'
                   >
-                    <a>Personalização</a>
+                    <a>segurança</a>
                   </li>
 
                   <li
-                    onClick={() => selectCategory("Dicas")}
+                    onClick={() => selectCategory("personalização")}
                     id='category'
-                    value='Dicas'
+                    value='personalização'
                     className='block cursor-pointer px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'
                   >
-                    <a>Dicas</a>
+                    <a>personalização</a>
+                  </li>
+
+                  <li
+                    onClick={() => selectCategory("dicas")}
+                    id='category'
+                    value='dicas'
+                    className='block cursor-pointer px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'
+                  >
+                    <a>dicas</a>
                   </li>
                 </ul>
               </div>

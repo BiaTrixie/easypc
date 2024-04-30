@@ -51,12 +51,12 @@ const MyBlogs = () => {
   const delHandler = async (id) => {
     const showConfirmation = () => {
       return Swal.fire({
-        title: "Confirm Delete?",
-        text: "Are you sure you want to delete this post?",
+        title: "Confirmar exclusão?",
+        text: "Você tem certeza de que quer deltar esse artigo?",
         icon: "question",
         showCancelButton: true,
-        confirmButtonText: "Yes, delete it",
-        cancelButtonText: "Cancel",
+        confirmButtonText: "Sim, eu quero deletar!",
+        cancelButtonText: "Não",
       });
     };
 
@@ -66,10 +66,10 @@ const MyBlogs = () => {
         const ref = doc(db, "blogs", id);
         await deleteDoc(ref);
         setUserBlog(userBlog.filter((blog) => blog?.id !== id));
-        toast.success("Post deleted");
+        toast.success("Artigo deletado");
       } catch (error) {
         console.log(error.message);
-        toast.error("Post not deleted");
+        toast.error("Artigo não deletado");
       }
     }
   };

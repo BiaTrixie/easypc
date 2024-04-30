@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { getAuth } from "firebase/auth";
-import parse from "html-react-parser";
+import { Fragment } from "react"; // Importe Fragment
 import { useLocation, useNavigate } from "react-router-dom";
 import LazyLoad from "./common/LazyLoad";
 import dayjs from "dayjs";
@@ -37,8 +37,9 @@ const Card = ({ id, blog, delHandler }) => {
               {blog?.blogData?.title}
             </h2>
           </a>
+          {/* Renderizar o conteúdo HTML diretamente no JSX */}
           <p className='mb-3 line-clamp-2 font-normal text-gray-700  dark:text-gray-400'>
-            {parse(blog?.blogData?.content)}
+            {blog?.blogData?.content}
           </p>
           <div className='mt-6 flex items-center justify-between'>
             <button className='inline-flex items-center rounded-lg bg-blue-700 px-3 py-2 text-center text-sm font-medium text-white hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 active:scale-95 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'>

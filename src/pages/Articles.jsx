@@ -66,7 +66,7 @@ const Articles = () => {
 
       if (docSnap.empty) {
         setHasMore(false);
-        toast.success("All blogs fetched!!");
+        toast.success("Todos os artigos encontrados!");
       }
       setLastBlog(lastVisible);
       const blogs = [];
@@ -79,7 +79,7 @@ const Articles = () => {
       setBlogsData([...blogsData, ...blogs]);
     } catch (error) {
       console.log(error);
-      toast.error("Could not fetch more blogs !!");
+      toast.error("Não foi possível buscar mais blogs!!");
     } finally {
       setInfiniteLoading(false);
     }

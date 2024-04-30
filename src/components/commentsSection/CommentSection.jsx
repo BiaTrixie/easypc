@@ -53,12 +53,11 @@ const CommentSection = () => {
         // Update the document with the new blogData containing comments
         // await setDoc(blogRef, blogData);
         setinputText("");
-        toast.success("Comment Posted!!");
-        console.log("Try finished");
+        toast.success("Comantário postado");
       }
     } catch (error) {
       if (!auth.currentUser) {
-        Swal.fire("You need to be logged in to post a comment.");
+        Swal.fire("Você precisa logar para comentar nesse artigo!");
       }
       console.log(error);
       // toast.error("Unable to post comment");
@@ -72,7 +71,7 @@ const CommentSection = () => {
   }
   return (
     <div className='mt-4'>
-      <h1 className='py-3 text-2xl text-cyan-800'>Comments ~</h1>
+      <h1 className='py-3 text-2xl text-cyan-800'>Comentários</h1>
       <form onSubmit={onSubmitHandler}>
         {/* change to falsy */}
         <CommentTextArea
@@ -85,7 +84,7 @@ const CommentSection = () => {
           type='submit'
           className='mt-8 w-full cursor-pointer rounded-md bg-gradient-to-r from-violet-600 to-indigo-600 py-3 font-semibold text-white transition duration-200 ease-in-out active:scale-90'
         >
-          Post comment
+          Postar comentário
         </button>
       </form>
     </div>

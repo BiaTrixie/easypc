@@ -8,13 +8,13 @@ import { getFirestore } from "firebase/firestore";
 const firebaseConfig = {
   apiKey: "AIzaSyBJLYT0xwyIyA4UuLlXNHOgIELJEWX4ExQ",
   authDomain: "easypc-58ab8.firebaseapp.com",
+  databaseURL: "https://easypc-58ab8-default-rtdb.firebaseio.com",
   projectId: "easypc-58ab8",
   storageBucket: "easypc-58ab8.appspot.com",
   messagingSenderId: "249383425204",
   appId: "1:249383425204:web:70ce7dd3d3ac19dce9f3e1",
   measurementId: "G-DEWXQ8SHQ7"
 };
-
 // Initialize Firebase
 initializeApp(firebaseConfig);
 

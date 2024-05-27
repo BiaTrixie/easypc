@@ -118,7 +118,7 @@ const Header = () => {
               location.pathname === "/" && "highlight"
             } `}
           >
-            <Link to='/'>Home</Link>
+            <Link to='/'>Inicio</Link>
           </li>
           <li
             className={`${styles.li} ${
@@ -162,7 +162,7 @@ const Header = () => {
                 location.pathname === "/sign-in" && "highlight"
               } `}
             >
-              <Link to='/sign-in'>sign-in</Link>
+              <Link to='/sign-in'>cadastrar</Link>
             </li>
           )}
         </nav>

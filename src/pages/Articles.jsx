@@ -43,7 +43,7 @@ const Articles = () => {
         setLoading(false);
       } catch (error) {
         console.log(error);
-        toast.error("Unable to load articles");
+        toast.error("Impossivel carregar os artigos");
       }
     };
     fetchBlogs();

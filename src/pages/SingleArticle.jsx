@@ -8,13 +8,14 @@ import { Balancer } from "react-wrap-balancer";
 import parse from "html-react-parser";
 import "react-quill/dist/quill.snow.css";
 import dayjs from "dayjs";
+import "dayjs/locale/pt-br";  // Importando o locale em português
 import LazyLoad from "../components/common/LazyLoad";
 
 const SingleArticle = () => {
   const [blogData, setBlogData] = useState();
   const [loading, setLoading] = useState(true);
   const params = useParams();
-  const { categoryName, articleId } = params;
+  const { articleId } = params;
 
   useEffect(() => {
     const fetchData = async () => {
@@ -35,8 +36,11 @@ const SingleArticle = () => {
     fetchData();
   }, []);
 
+  // Configurando dayjs para usar o locale em português
+  dayjs.locale("pt-br");
+
   const formattedDate = dayjs(blogData?.data?.timestamp?.toDate()).format(
-    "YYYY-MM-DD"
+    "DD MMMM YYYY"
   );
   if (loading) {
     return <Loader />;

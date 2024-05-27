@@ -74,7 +74,7 @@ const SingleArticle = () => {
               <p>
                 {" "}
                 <i className='font-extralight text-gray-400'>
-                  written by ~{" "}
+                  escrito por {" "}
                 </i>{" "}
                 <strong> {blogData.data.author.name} </strong> on{" "}
                 <strong>{formattedDate}</strong>

@@ -76,7 +76,7 @@ const SingleArticle = () => {
                 <i className='font-extralight text-gray-400'>
                   escrito por {" "}
                 </i>{" "}
-                <strong> {blogData.data.author.name} </strong> on{" "}
+                <strong> {blogData.data.author.name} </strong> em{" "}
                 <strong>{formattedDate}</strong>
               </p>
             </div>

@@ -37,7 +37,7 @@ const Dropdown = ({ toggleMenu, category, selectCategory, isOpen }) => {
                 value='Fundamentos'
                 className='block cursor-pointer px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'
               >
-                <a>Fundamentos</a>
+                <a>fundamentos</a>
               </li>
               <li
                 onClick={() => selectCategory("componentes")}
@@ -45,7 +45,7 @@ const Dropdown = ({ toggleMenu, category, selectCategory, isOpen }) => {
                 value='Componentes'
                 className='block cursor-pointer px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'
               >
-                <a>Componentes</a>
+                <a>componentes</a>
               </li>
 
               <li
@@ -54,7 +54,7 @@ const Dropdown = ({ toggleMenu, category, selectCategory, isOpen }) => {
                 value='Montagem'
                 className='block cursor-pointer px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'
               >
-                <a>Montagem</a>
+                <a>montagem</a>
               </li>
 
               <li
@@ -63,7 +63,7 @@ const Dropdown = ({ toggleMenu, category, selectCategory, isOpen }) => {
                 value='Sistema'
                 className='block cursor-pointer px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'
               >
-                <a>Sistema</a>
+                <a>sistema</a>
               </li>
 
               <li
@@ -72,7 +72,7 @@ const Dropdown = ({ toggleMenu, category, selectCategory, isOpen }) => {
                 value='Segurança'
                 className='block cursor-pointer px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'
               >
-                <a>Segurança</a>
+                <a>segurança</a>
               </li>
 
               <li
@@ -81,7 +81,7 @@ const Dropdown = ({ toggleMenu, category, selectCategory, isOpen }) => {
                 value='Personalização'
                 className='block cursor-pointer px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'
               >
-                <a>Personalização</a>
+                <a>personalização</a>
               </li>
 
               <li
@@ -90,7 +90,7 @@ const Dropdown = ({ toggleMenu, category, selectCategory, isOpen }) => {
                 value='Dicas'
                 className='block cursor-pointer px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'
               >
-                <a>Dicas</a>
+                <a>dicas</a>
               </li>
             </ul>
           </div>

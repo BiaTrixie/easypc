@@ -13,9 +13,6 @@ const ReactionButtons = ({ post }) => {
         key={name}
         type='button'
         className='space-x-3 border-none bg-transparent'
-        // onClick={() =>
-        //   dispatch(reactionAdded({ postId: post.id, reaction: name }))
-        // }
       >
         <span className='mx-1 flex items-center rounded-full text-3xl transition-all duration-200 ease-in-out active:scale-95'>
           {emoji}

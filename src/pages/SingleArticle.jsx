@@ -8,7 +8,7 @@ import { Balancer } from "react-wrap-balancer";
 import parse from "html-react-parser";
 import "react-quill/dist/quill.snow.css";
 import dayjs from "dayjs";
-import "dayjs/locale/pt-br";  // Importando o locale em português
+import "dayjs/locale/pt-br";  
 import LazyLoad from "../components/common/LazyLoad";
 
 const SingleArticle = () => {

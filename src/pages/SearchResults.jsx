@@ -18,7 +18,7 @@ const SearchResults = () => {
   useEffect(() => {
     const fetchSearchResults = async () => {
       if (!searchQuery) {
-        return toast.error("Search term is empty");
+        return toast.error("A pesquisa está vazia");
       }
 
       setLoading(true);
@@ -40,8 +40,8 @@ const SearchResults = () => {
 
         setLoading(false);
       } catch (error) {
-        console.error("Error fetching search results:", error);
-        toast.error("Sorry! There was an error retrieving search results.");
+        console.error("Erro ao capturar resultados", error);
+        toast.error("Desculpe! não consegui buscar os resultados");
         setLoading(false);
       }
     };
@@ -59,7 +59,7 @@ const SearchResults = () => {
       );
       setFilteredBlogs(filteredData);
       setLoading(false);
-      console.log("Filtered Blogs: ", filteredBlogs);
+      console.log("Blogs filtrados: ", filteredBlogs);
     }
   }, [searchQuery, blogsData]);
 
@@ -71,7 +71,7 @@ const SearchResults = () => {
 
       <div className='my-12 pl-10'>
         <p className='text-3xl'>
-          You searched for
+          Você pesquisou por
           <q>
             {" "}
             <strong>{searchQuery}</strong>
@@ -88,7 +88,7 @@ const SearchResults = () => {
           ) : (
             <>
             <p className="text-2xl font-semibold text-center text-sky-500 mt-20 uppercase">
-              No blogs found for the search term: <q className="underline decoration-wavy decoration-green-800"> {searchQuery} </q>.
+              blogs não encontrados para o termo <q className="underline decoration-wavy decoration-green-800"> {searchQuery} </q>.
             </p>
             <img className="bg-transparent w-[60%] rounded-lg mx-auto mt-12" src="https://img.freepik.com/free-vector/hand-drawn-no-data-illustration_23-2150696467.jpg?w=826&t=st=1707572418~exp=1707573018~hmac=af1032c6391a3cd3bedbd1a2537bc8964cc9477119c8281ba447724333f933bb" alt="error-image" />
             </>
